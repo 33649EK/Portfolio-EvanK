@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    margin: 1em;
+}
+
+nav ul li {
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+#top h1 {
+    display: flex;
+    background-color: aquamarine;
+    position: absolute;
+    box-shadow: 0px 2px 2px 0px black;
+    transform: rotate(2deg);
+    justify-content: space-around;
+}
+
+h1 {
+    width: 17%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    font-size: 35px;
+}
+
+/* Following side header code taken from aside explanation at 
+https://www.w3schools.com/html/html5_semantic_elements.asp */
+.side-header {
+    width: 17%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    text-align: right;
+    padding-right: 8px;
+    border-right: 2px solid brown;
+    margin-right: 8px;
+}
+
+p {
+    margin-top: 5px;
+    text-indent: 20px;
+}
+
+#trial {}
