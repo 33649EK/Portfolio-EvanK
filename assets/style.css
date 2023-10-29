@@ -4,18 +4,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#banner {
+    height: 125px;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
 
 ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
-}
-
-img {
-    width: 50px;
-    position: relative;
-    left: 0px;
 }
 
 
@@ -31,7 +31,7 @@ ul li {
 
 #top h1 {
     display: flex;
-    background-color: aquamarine;
+    background-color: white;
     position: absolute;
     box-shadow: 0px 2px 2px 0px black;
     transform: rotate(2deg);
@@ -69,4 +69,63 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+
+#work-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0 0 20px;
+}
+
+#primary-work {
+    width: 500px;
+    border: 3px solid black;
+    border-radius: 8px;
+    max-height: 700px;
+}
+
+.secondary-works {
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 8px;
+
+}
+
+#contact-me {
+    margin-top: 45px;
+}
+
+#contact-info {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    height: fit-content;
+}
+
+#primary-image-title-box {
+    position: absolute;
+    left: 150px;
+    bottom: 4px;
+    background-color: rgba(90, 151, 151, 0.397);
+    color: black;
+    padding: 0.3em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.image-title-box {
+    position: absolute;
+    left: 45px;
+    bottom: 4px;
+    background-color: rgba(90, 151, 151, 0.397);
+    color: black;
+    padding: 0.3em;
+    border: 2px solid black;
+    border-radius: 5px;
 }
