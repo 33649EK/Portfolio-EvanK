@@ -137,10 +137,12 @@ a {
     box-shadow: var(--boxShadow);
     height: 40vh;
     width: var(--work-width);
+    opacity: .8;
 }
 
 #primary-work:hover {
     box-shadow: var(--linkGlow);
+    opacity: 1;
 }
 
 .secondary-works {
@@ -150,11 +152,12 @@ a {
     border-radius: 8px;
     box-shadow: var(--boxShadow);
     margin-bottom: 10px;
-
+    opacity: 0.8;
 }
 
 .secondary-works:hover {
     box-shadow: var(--linkGlow);
+    opacity: 1;
 }
 
 #contact-me {
