@@ -19,7 +19,7 @@ Clicking on items in the navigation bar at the top right will scroll the page to
 When the window is narrowed below 1034px, the formatting for headers and the image links will begin to change.
 ## Credits
 
-All images in the works section were taken from https://unsplash.com. Some code in the style.css file was taken from https://www.w3schools.com/html/html5_semantic_elements.asp before being modified.
+All images in the works section were taken from https://unsplash.com. Some code in the style.css file was taken from https://www.w3schools.com/html/html5_semantic_elements.asp before being modified. This code can be found on line 83-92 and 206-216 of the style.css file. reset.css file taken from activity 12 of module 2 in the class assignment repository.
 
 ## License
 
