@@ -7,11 +7,11 @@
 :root {
     --work-width: 800px;
     --bodyBackground: rgb(219, 239, 245);
-    --headerBackground: rgba(90, 151, 151, 0.397);
+    --headerBackground: rgba(90, 151, 151, 0.911);
     --linkGlow: inset 0px 0px 8px rgb(252, 132, 132), 0 0 15px rgb(255, 162, 162);
     --boxShadow: 1px 2px 2px 0px black;
-
-
+    --border: 2px solid black;
+    --headerSeparator: 2px solid rgb(107, 68, 45);
 
 }
 
@@ -42,6 +42,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
+    min-width: 667px;
 }
 
 #directory {
@@ -71,11 +72,10 @@ ul li {
 #banner {
     height: 125px;
     width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: var(var(--border));
+    border-bottom: var(var(--border));
+    margin-bottom: 12px;
 }
-
-
 
 /* Following side header code taken from aside explanation at 
 https://www.w3schools.com/html/html5_semantic_elements.asp */
@@ -88,7 +88,7 @@ https://www.w3schools.com/html/html5_semantic_elements.asp */
     font-style: italic;
     text-align: right;
     padding-right: 8px;
-    border-right: 2px solid brown;
+    border-right: var(--headerSeparator);
     margin-right: -2px;
 }
 
@@ -96,8 +96,9 @@ p {
     margin-top: 5px;
     margin-left: 218px;
     text-indent: 20px;
-    border-left: 2px solid brown;
+    border-left: var(--headerSeparator);
     padding: 0 0 0 10px;
+    line-height: 1.7;
 }
 
 a {
@@ -111,7 +112,7 @@ a {
     flex-wrap: wrap;
     margin: 20px 0 0 20px;
     justify-content: space-around;
-    border-left: 2px solid brown;
+    border-left: var(--headerSeparator);
     padding: 0 0 0 10px;
 }
 
@@ -131,7 +132,7 @@ a {
 }
 
 #primary-work {
-    border: 3px solid black;
+    border: var(--border);
     border-radius: 8px;
     box-shadow: var(--boxShadow);
     height: 40vh;
@@ -145,7 +146,7 @@ a {
 .secondary-works {
     width: 391px;
     height: 170px;
-    border: 3px solid black;
+    border: var(--border);
     border-radius: 8px;
     box-shadow: var(--boxShadow);
     margin-bottom: 10px
@@ -181,9 +182,8 @@ a {
     left: 150px;
     bottom: 4px;
     background-color: var(--headerBackground);
-    color: black;
     padding: 0.3em;
-    border: 2px solid black;
+    border: var(--border);
     border-radius: 5px;
 }
 
@@ -192,8 +192,80 @@ a {
     left: 94px;
     bottom: 14px;
     background-color: var(--headerBackground);
-    color: black;
     padding: 0.3em;
-    border: 2px solid black;
+    border: var(--border);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1033px) {
+    .side-header {
+        width: fit-content;
+        padding-left: 15px;
+        margin-left: 15px;
+        font-size: larger;
+        float: none;
+        font-style: italic;
+        text-align: start;
+        padding-right: 8px;
+        border-right: none;
+        margin-right: -2px;
+        border-bottom: var(--headerSeparator);
+    }
+
+    p {
+        margin-top: 5px;
+        text-indent: 20px;
+        border-left: none;
+        padding: 0 0 0 10px;
+        margin: 15px 50px 20px 50px;
+        line-height: 1.5;
+    }
+
+    #work-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px 0 0 5px;
+        justify-content: space-around;
+        border-left: none;
+        padding: 0 0 0 10px;
+    }
+
+    #contact-info {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 829px) {
+    #primary-work {
+        width: 391px;
+        height: 170px;
+        border: var(--border);
+        border-radius: 8px;
+        box-shadow: var(--boxShadow);
+        margin-bottom: 10px
+    }
+
+    #small-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: auto;
+    }
+
+    #primary-image-title-box {
+        position: absolute;
+        left: 94px;
+        bottom: 14px;
+        background-color: var(--headerBackground);
+        padding: 0.3em;
+        border: var(--border);
+        border-radius: 5px;
+    }
 }
